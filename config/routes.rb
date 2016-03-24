@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'sportfolio' => 'static_page#sportfolio'
   get 'cheethtml' => 'static_page#cheethtml'
   get 'applirandom' => 'static_page#applirandom'
-  get 'cv' => 'static_page#cv'
+
 
 
   # Example of regular route:
