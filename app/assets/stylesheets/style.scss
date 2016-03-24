@@ -1,0 +1,800 @@
+
+body {
+  background: #f7f7f7;
+}
+.navbar, .nav, .navbar-brand {
+  opacity: 0.8;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.25em;
+  margin : auto;
+}
+.nav {
+  margin-top: 1%;
+}
+#nav.affix-top {
+   position: absolute;
+   top:0;
+   left:0;
+   z-index:30;
+   height:74px;
+   border:0;
+   width : 100%;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+   width: 100%;
+
+}
+.navbar-toggle {
+	outline:0;
+}
+.imagheader {
+  height: 500px;
+  background-color: #DADBBD;
+}
+.logo {
+  margin-top: 35px;
+}
+.bienvenue {
+  border: 3px solid #F2E7D4;
+  color: #F2E7D4;
+  text-align: center;
+  line-height: 1.2em;
+  width: 6em;
+  font-family: 'PT Sans', sans-serif;
+}
+h1 {
+  border: 4px solid white;
+  color: #4C4C45;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+h3 {
+  color: #4C4C45;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.80em;
+}
+h2 {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+h4 {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+p, p.descriptif {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+.linedesign {
+  margin-left: 35%;
+  width: 30%;
+  height: 35%;
+}
+.contact {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.65em;
+  margin-top: 35px;
+  margin-left: 25%;
+}
+.hobbies {
+  margin-top: 35px;
+}
+div.hr {
+background: #AAAB93 no-repeat scroll center;
+margin-left: 39em;
+width:100px;
+height:4px;
+}
+.footer {
+  height: 280px;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.diagram {
+	display: inline-block;
+	margin: 2em;
+  height:auto;
+}
+#section2, #section3, #section4, #section5, #section6, .imagheader {
+  padding-top: 90px;
+
+}
+
+/* ############################  SOCIAL ICON FOOTER ###################### */
+.social {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  bottom: 75%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+/*@media screen and (max-width:300px) {
+  .social {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    top: 50%;
+    bottom: 15%;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  div.hr {
+  background: #AAAB93 no-repeat scroll center;
+  margin-left: 39em;
+  width:100px;
+  height:4px;
+  }
+}*/
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 35px;
+  margin-top: 25%;
+  text-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 70px;
+}
+
+.social .link span {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+/* ############################  /SOCIAL ICON FOOTER ###################### */
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .5s;
+  color: #D7D0BE;
+  margin-left: 15px;
+  margin-right: 35px;
+  margin-top: 25%;
+  text-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: 70px;
+}
+
+/* ################################## TEST CIRCLE PROGRESS 1er ###################*/
+.progress-pie-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.progress-pie-chart.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents span {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progress-pie-chart {
+  margin: 50px auto 0;
+}
+
+/* ################################## /TEST CIRCLE PROGRESS2 ###################*/
+.progress-pie-chart2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.progress-pie-chart2.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress2 .ppc-progress-fill2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress2 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress2 .ppc-progress-fill2 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents2 span.deux {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+  margin-top:35%;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progress-pie-chart2 {
+  margin: 50px auto 0;
+}
+
+/* ####################################### CIRCLE THIRD ######################*/
+.progress-pie-chart3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+/* if the div is > 50 --> change the background-color*/
+.progress-pie-chart3.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress3 .ppc-progress-fill3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress3 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress3 .ppc-progress-fill3 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents3 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents3 span.trois {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+  margin-top:35%;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.progress-pie-chart3 {
+  margin: 50px auto 0;
+}
+/* #####################   CIRCLE PROGRESS FOUR ############*/
+.progress-pie-chart4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+/* if the div is > 50 --> change the background-color*/
+.progress-pie-chart4.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress4 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress4 .ppc-progress-fill4 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress4 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress4 .ppc-progress-fill4 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents4 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents4 span.quatre {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+  margin-top:35%;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.progress-pie-chart4 {
+  margin: 50px auto 0;
+}
+/* ######################## CIRCLE FOR FIVE ROW SKILLS ############################*/
+.progress-pie-chart5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+/* if the div is > 50 --> change the background-color*/
+.progress-pie-chart5.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress5 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress5 .ppc-progress-fill5 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress5 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress5 .ppc-progress-fill5 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents5 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents5 span.cinq {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+  margin-top:35%;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.progress-pie-chart5 {
+  margin: 50px auto 0;
+}
+/* ################################## /TEST CIRCLE PROGRESS2 ###################*/
+.progress-pie-chart6 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.progress-pie-chart6.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress6 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress6 .ppc-progress-fill6 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress6 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress6 .ppc-progress-fill6 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents6 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents6 span.six {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+  margin-top:35%;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progress-pie-chart6 {
+  margin: 50px auto 0;
+}
+/* ################################## /TEST CIRCLE PROGRESS2 ###################*/
+.progress-pie-chart7 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.progress-pie-chart7.gt-50 {
+  background-color: #FF7420;
+}
+
+.ppc-progress7 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress7 .ppc-progress-fill7 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #FF7420;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress7 {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress7 .ppc-progress-fill7 {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents7 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.91304px/2);
+  top: calc(50% - 173.91304px/2);
+  width: 173.91304px;
+  height: 173.91304px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents7 span.sept {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #FF7420;
+  margin-top:35%;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progress-pie-chart7 {
+  margin: 50px auto 0;
+}
+/* ######################### Return on top #################################*/
+#returnOnTop {
+    background: url('img/bouton-haut.png') no-repeat;
+    bottom: 30%;
+    cursor: pointer;
+    display: none;
+    filter: alpha(opacity = 50); /* IE < 8 */
+    height: 48px;
+    opacity: 0.5;
+    position: fixed;
+    right: 4.7%;
+    width: 48px;
+    z-index: 10;
+}
+
+#returnOnTop:hover {
+    filter: alpha(opacity = 100); /* IE < 8 */
+    opacity: 1;
+}
+/* ######################### BUTTON PRECEDENT PROJECT ###################### */
+.button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+/* ######################## CIRCLE FOR ROW SKILLS ############################*/
+/* the blue circle with only one line of text, centered vertically */
+.col {
+  width: 80%;
+  height: 70%;
+  padding: 3%;
+  /*margin-bottom: 5%;*/
+}
+.oneline:after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 100%;
+  padding-bottom: 100%;
+  background: #182442;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.oneline div {
+  float: left;
+  width: 120%;
+  padding-top: 50%;
+  line-height: 1.55em;
+  margin-top: -1.7em;
+  text-align: center;
+  color: white;
+}
+.oneline p {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+ to {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+}@keyframes hvr-pulse-grow {
+ to {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+}.hvr-pulse-grow {  vertical-align: middle;
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0);
+ box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ -moz-osx-font-smoothing: grayscale;
+}.hvr-pulse-grow:hover {
+ /*-webkit-animation-name: hvr-pulse-grow;*/
+ animation-name: hvr-pulse-grow;
+ /*-webkit-animation-duration: 0.3s;*/
+ animation-duration: 0.3s;
+ /*-webkit-animation-timing-function: linear;*/
+ animation-timing-function: linear;
+ /*-webkit-animation-iteration-count: infinite;*/
+ animation-iteration-count: infinite;
+ /*-webkit-animation-direction: alternate;*/
+ animation-direction: alternate;
+}

@@ -1,0 +1,70 @@
+body {
+  margin : auto;
+  background-color: #FFFEFE;
+
+}
+/* ///////////////////////////////// HEADER ///////////////////////////////// */
+#nav {
+  width : 100%;
+  position: fixed;
+}
+#entete {
+  height : 15px;
+  background-color: #FFC2B3;
+}
+.logo {
+  margin-top: 35px;
+}
+h1.double {
+  border-style: double;
+  height: 1.75em;
+  margin-top: 55px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* ///////////////////////////////// /HEADER //////////////////////////////// */
+
+/* ///////////////////////////////// ASIDE ///////////////////////////////// */
+#aside {
+  	height: 900px;
+  	background-color: #C9BBA9;
+  	}
+
+hr {
+  width: 215px;
+  margin-right: 1053px;
+  margin-left: 15px;
+  color: black;
+}
+
+h3 {
+
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+}
+.presentation {
+  text-align: justify;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.2em;
+}
+.iccon {
+ margin-left: 10px;
+}
+/* ///////////////////////////////// /ASIDE ///////////////////////////////// */
+
+/* ///////////////////////////////// SECTION //////////////////////////////// */
+h2 {
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+}
+.traith {
+  height: 2px;
+  color: black;
+  background-color: black;
+  width: 30%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ///////////////////////////////// /SECTION /////////////////////////////// */
