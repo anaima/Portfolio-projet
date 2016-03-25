@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root 'static_page#index'
 
   get 'kidco' => 'static_page#kidco'
-  get 'projet' => 'static_page#kidco'
+  get 'projet' => 'static_page#projet'
   get 'sportfolio' => 'static_page#sportfolio'
   get 'cheethtml' => 'static_page#cheethtml'
   get 'applirandom' => 'static_page#applirandom'
