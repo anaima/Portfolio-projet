@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PortfolioProjet</title>
+
+    <title><%= content_for?(:title) ? yield(:title) : "Portfolio" %></title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -65,7 +66,7 @@
     </header>
     <!-- /HEADER -->
 
-    <%= yield %>
+    <%= yield%>
 
     <div class="row footer" id="contact">
       <div class="col-md-6 col-md-offset-3 col-xs-12">

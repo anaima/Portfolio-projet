@@ -7,7 +7,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <%= favicon_link_tag 'favicon.ico' %>
 
-    <title>Portfolio</title>
+
+    <% content_for :title do %>Accueil<% end %>
+
 
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
@@ -395,9 +397,7 @@
                 <br>
                 <br>
                 <br>
-
                 <a href="img/CV.pdf"><img src="img/cv.jpeg" alt="le curriculum vitae en pdf"/></a>
-
               </div>
             </div> <!-- /row -->
 
