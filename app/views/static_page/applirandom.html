@@ -62,10 +62,10 @@
     <br>
 
     <div class="row">
-      <div class="col-md-5 col-md-offset-4">
-        <a href="index.html">
-          <button class="button">Précédent</button>
-        </a>
+      <div class="col-md-6">
+      <%= button_to "Précédent", home_path, :class => "button", :method => :get  %>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
         <a href="http://naima-apprandom.herokuapp.com/">
           <button class="button">L'application random Officiel</button>
         </a>
