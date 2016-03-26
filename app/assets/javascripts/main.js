@@ -121,3 +121,16 @@ $(window).scroll(function() {
     else
 	$('#returnOnTop').fadeIn();
 });
+ /*  ########################### BOUNCE BALL  ################################*/
+ // frameRate(10);
+ //
+ // var pos = 0;
+ // draw = function() {
+ //   background(204);
+ //   pos++;
+ //   ellipse(pos, 200, 40, 40);
+ //
+ //   if(pos > width) {
+ //     pos = 0;
+ //   }
+ // };
