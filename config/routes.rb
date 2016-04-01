@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'contact/new'
+  post 'contact/new'
+  post "contact/create"
+
+  # get 'contact/create'
+  # resources "contact", only: [:new, :create]
+
+  # match '/contact',     to: 'contact#new',             via: 'get'
+  # resources "contact", only: [:new, :create]
+
   # get 'static/pages'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -12,6 +22,11 @@ Rails.application.routes.draw do
   get 'cheethtml' => 'static_page#cheethtml'
   get 'applirandom' => 'static_page#applirandom'
   get 'home' => 'static_page#index'
+  # post 'contact' => 'contact#create'
+  # get 'Contact' => 'contact#new'
+  # get 'Contact' => 'contact#create'
+  # get 'Contact' => 'contact#index'
+
 
 
 
